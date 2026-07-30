@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+}
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1000px){
+    
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O.G DEBBY</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./navBar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">O.G DEBBY</a>
+      <!-- Desktop Navigation -->
+      <nav class="desktopNav">
+        <ul class="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./pages/product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="desktopForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <a href="./pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </nav>
+      <!-- Mobile Navigation -->
+      <div class="mobileNav">
+        <i class="fa-solid fa-bars menuIcon" id="openMenu"></i>
+        <a href="./pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </div>
+      <div class="mobileMenu hide">
+        <i class="fa-solid fa-xmark closeIcon" id="closeMenu"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./pages/product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="mobileForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+    <script src="./js files/navBar.js" defer></script>
+  </body>
+</html>
