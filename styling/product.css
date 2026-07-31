@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.productPage{
+    width:90%;
+    margin:4rem auto;
+}
+.productContainer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+.mainImage{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.thumbnailContainer{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-top:1rem;
+
+}
+
+.thumbnailContainer img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.thumbnailContainer img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.category{
+
+    color:#0b84ff;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.productInfo h1{
+
+    margin:1rem 0;
+
+    font-size:2.5rem;
+
+}
+
+.rating{
+
+    color:gold;
+
+    margin-bottom:1rem;
+
+}
+
+.price{
+
+    font-size:2rem;
+
+    color:#0b84ff;
+
+    font-weight:bold;
+
+    margin-bottom:1.5rem;
+
+}
+
+.description{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:2rem;
+
+}
+
+.quantityBox{
+
+    margin-bottom:2rem;
+
+}
+
+.quantityBox label{
+
+    display:block;
+
+    margin-bottom:.5rem;
+
+}
+
+.quantityBox input{
+
+    width:80px;
+
+    padding:.6rem;
+
+    font-size:1rem;
+
+}
+
+.addCartBtn{
+
+    background:#0b84ff;
+
+    color:white;
+
+    border:none;
+
+    padding:1rem 2rem;
+
+    border-radius:6px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.addCartBtn:hover{
+
+    background:#0869ca;
+
+}
+/* Tablet */
+
+@media(max-width:1000px){
+
+.productContainer{
+
+    grid-template-columns:1fr;
+
+}
+
+.mainImage{
+
+    height:400px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.productPage{
+
+    width:95%;
+
+}
+
+.productInfo{
+
+    text-align:center;
+
+}
+
+.productInfo h1{
+
+    font-size:2rem;
+
+}
+
+.thumbnailContainer{
+
+    justify-content:center;
+
+}
+
+.addCartBtn{
+
+    width:100%;
+
+}
+
+}

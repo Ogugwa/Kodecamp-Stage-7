@@ -4,6 +4,171 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
+    <link rel="stylesheet" href="../navBar.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="index.html" class="logo">O.G DEBBY</a>
+      <!-- Desktop Navigation -->
+      <nav class="desktopNav">
+        <ul class="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="desktopForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <a href="./pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </nav>
+      <!-- Mobile Navigation -->
+      <div class="mobileNav">
+        <i class="fa-solid fa-bars menuIcon" id="openMenu"></i>
+        <a href="./pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </div>
+      <div class="mobileMenu hide">
+        <i class="fa-solid fa-xmark closeIcon" id="closeMenu"></i>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="mobileForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- Products Section -->
+    <main class="productPage">
+      <section class="productContainer">
+        <!-- Product Images -->
+
+        <div class="productGallery">
+          <img src="../images/headphone.jpg" alt="Product" class="mainImage" />
+
+          <div class="thumbnailContainer">
+            <img src="../images/headphone.jpg" alt="Thumbnail" />
+
+            <img src="../images/headphone.jpg" alt="Thumbnail" />
+
+            <img src="../images/headphone.jpg" alt="Thumbnail" />
+
+            <img src="../images/headphone.jpg" alt="Thumbnail" />
+          </div>
+        </div>
+
+        <!-- Product Details -->
+
+        <div class="productInfo">
+          <span class="category"> Electronics </span>
+
+          <h1>Wireless Noise-Cancelling Headphones</h1>
+
+          <div class="rating">★★★★☆ (4.8)</div>
+
+          <p class="price">₦85,000</p>
+
+          <p class="description">
+            Enjoy crystal-clear sound with active noise cancellation, premium
+            comfort, and up to 40 hours of battery life. Perfect for work,
+            travel, and entertainment.
+          </p>
+
+          <div class="quantityBox">
+            <label>Quantity</label>
+
+            <input type="number" min="1" value="1" />
+          </div>
+
+          <button class="addCartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Add to Cart
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footerContainer">
+        <!-- Brand -->
+        <div class="footerColumn">
+          <h2>O.G DEBBY</h2>
+          <p>
+            our one-stop online marketplace for quality products, unbeatable
+            prices, and a seamless shopping experience.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footerColumn">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/product.html">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footerColumn" id="contact">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Lagos, Nigeria
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +234 800 123 4567
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@ogdebby.com
+          </p>
+        </div>
+        <!-- Social Media -->
+        <div class="footerColumn">
+          <h3>Follow Us</h3>
+          <div class="socialIcons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>© 2026 O.G DEBBY. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="../js files/navBar.js" defer></script>
+  </body>
 </html>
