@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f9fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   CART PAGE
+=========================== */
+
+.cartPage{
+    width:90%;
+    margin:3rem auto;
+}
+
+.cartPage h1{
+    font-size:2.5rem;
+    margin-bottom:2rem;
+    text-align:center;
+    color:#222;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.cartContainer{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:2rem;
+    align-items:start;
+}
+
+/* ===========================
+   CART ITEMS
+=========================== */
+
+.cartItems{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.cartItem{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+    background:#fff;
+    padding:1.2rem;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.cartItem img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    border-radius:8px;
+    background:#fff;
+}
+
+.itemDetails{
+    flex:1;
+}
+
+.itemCategory{
+    color:#0b84ff;
+    text-transform:uppercase;
+    font-size:.85rem;
+    font-weight:bold;
+    display:block;
+    margin-bottom:.5rem;
+}
+
+.itemTitle{
+    font-size:1.2rem;
+    margin-bottom:.7rem;
+    color:#222;
+}
+
+.itemPrice{
+    color:#0b84ff;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin-bottom:1rem;
+}
+
+/* ===========================
+   QUANTITY
+=========================== */
+
+.quantityControls{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+}
+
+.quantityControls button{
+    width:35px;
+    height:35px;
+    border:none;
+    background:#0b84ff;
+    color:#fff;
+    font-size:1.1rem;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quantityControls button:hover{
+    background:#0869ca;
+}
+
+.quantity{
+    font-weight:bold;
+    font-size:1rem;
+    width:25px;
+    text-align:center;
+}
+
+/* ===========================
+   REMOVE BUTTON
+=========================== */
+
+.removeBtn{
+    margin-top:1rem;
+    background:#dc3545;
+    color:#fff;
+    border:none;
+    padding:.7rem 1rem;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.removeBtn:hover{
+    background:#b02a37;
+}
+
+/* ===========================
+   SUMMARY
+=========================== */
+
+.cartSummary{
+    background:#fff;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+}
+
+.cartSummary h2{
+    margin-bottom:1.5rem;
+    color:#222;
+}
+
+.summaryRow{
+    display:flex;
+    justify-content:space-between;
+    margin:1rem 0;
+    font-size:1rem;
+}
+
+.summaryRow:last-of-type{
+    border-top:1px solid #ddd;
+    padding-top:1rem;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.checkoutBtn{
+    width:100%;
+    margin-top:2rem;
+    padding:1rem;
+    border:none;
+    background:#0b84ff;
+    color:#fff;
+    font-size:1rem;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkoutBtn:hover{
+    background:#0869ca;
+}
+
+/* ===========================
+   EMPTY CART
+=========================== */
+
+.emptyCart{
+    text-align:center;
+    background:#fff;
+    padding:3rem;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.emptyCart h2{
+    margin-bottom:1rem;
+    color:#333;
+}
+
+.emptyCart p{
+    color:#666;
+    margin-bottom:1.5rem;
+}
+
+.emptyCart a{
+    display:inline-block;
+    text-decoration:none;
+    background:#0b84ff;
+    color:#fff;
+    padding:.9rem 1.5rem;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.emptyCart a:hover{
+    background:#0869ca;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+.cartContainer{
+    grid-template-columns:1fr;
+}
+
+.cartSummary{
+    position:static;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.cartPage{
+    width:95%;
+}
+
+.cartPage h1{
+    font-size:2rem;
+}
+
+.cartItem{
+    flex-direction:column;
+    text-align:center;
+}
+
+.cartItem img{
+    width:180px;
+    height:180px;
+}
+
+.quantityControls{
+    justify-content:center;
+}
+
+.removeBtn{
+    width:100%;
+}
+
+.checkoutBtn{
+    width:100%;
+}
+
+.summaryRow{
+    font-size:.95rem;
+}
+
+}

@@ -9,3 +9,11 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
     mobileMenu.classList.add("hide");
 });
+const cartCounter = document.querySelector(".cartCount");
+
+function updateCartCounter() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cartCounter.textContent = cart.length;
+}
+
+updateCartCounter();

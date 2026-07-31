@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../navBar.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../styling/cart.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo">O.G DEBBY</a>
+      <!-- Desktop Navigation -->
+      <nav class="desktopNav">
+        <ul class="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="desktopForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <a href="../pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </nav>
+      <!-- Mobile Navigation -->
+      <div class="mobileNav">
+        <i class="fa-solid fa-bars menuIcon" id="openMenu"></i>
+        <a href="./pages/cart.html" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cartCount">0</span>
+        </a>
+      </div>
+      <div class="mobileMenu hide">
+        <i class="fa-solid fa-xmark closeIcon" id="closeMenu"></i>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/product.html">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <form class="mobileForm">
+          <input type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main class="cartPage">
+      <h1>Shopping Cart</h1>
+
+      <div class="cartContainer">
+        <section class="cartItems"></section>
+
+        <aside class="cartSummary">
+          <h2>Order Summary</h2>
+
+          <div class="summaryRow">
+            <span>Items</span>
+            <span id="itemCount">0</span>
+          </div>
+
+          <div class="summaryRow">
+            <span>Total</span>
+            <span id="cartTotal">₦0</span>
+          </div>
+
+          <button class="checkoutBtn">Proceed to Checkout</button>
+        </aside>
+      </div>
+    </main>
+    <script src="../js files/cart.js" defer></script>
+    <script src="../js files/cartPage.js" defer></script>
+  </body>
+</html>
