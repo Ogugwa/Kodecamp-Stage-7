@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../navBar.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../styling/checkout.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">O.G DEBBY</a>
+        <nav class="desktopNav">
+        <ul class="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./product.html">Shop</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        </ul>
+        <a href="./cart.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cartCount">0</span>
+        </a>
+        </nav>
+    </header>
+    <main class="checkoutPage">
+        <h1>Checkout</h1>
+        <div class="checkoutContainer">
+        <div class="checkoutForms">
+         <!-- Billing -->
+        <section>
+            <h2>Billing Information</h2>
+            <form id="checkoutForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea placeholder="Billing Address" required></textarea>            
+        </section>
+        <!-- Shipping -->
+        <section>
+            <h2>Shipping Information</h2>
+            <label>
+            <input type="checkbox" id="sameAddress" checked>Shipping same as billing</label>
+            <textarea id="shippingAddress" placeholder="Shipping Address" disabled></textarea>
+        </section>
+    <!-- Payment -->
+        <section>
+            <h2>Payment Information</h2>
+        <input type="text" placeholder="Card Holder Name" required>
+        <input type="text" maxlength="16" placeholder="Card Number" required>
+        <div class="paymentRow">
+            <input type="text" maxlength="5" placeholder="MM/YY" required>
+            <input type="password" maxlength="3" placeholder="CVV" required>
+        </div>
+        <button type="submit" class="placeOrderBtn">Place Order</button>
+    </form>
+    </div>
+
+    <!-- Summary -->
+
+    <div class="orderSummary">
+
+    <h2>Order Summary</h2>
+
+    <div class="summaryItems"></div>
+
+    <div class="summaryTotal">
+
+    <h3>Total</h3>
+
+    <p class="grandTotal">₦0</p>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </main>
+
+<script src="../js files/navBar.js"></script>
+<script src="../js files/checkout.js"></script>
+
+</body>
+</html>
